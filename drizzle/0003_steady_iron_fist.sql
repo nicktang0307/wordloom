@@ -1,0 +1,1 @@
+ALTER TABLE `reading_articles` ADD `read_at` integer;

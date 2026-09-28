@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "Wordloom NYT Importer",
+  "version": "0.2.0",
+  "description": "Send the NYT article you are reading to your private Wordloom preview.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "alarms"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Import into Wordloom"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://wordloom-reading.nicktang0307.chatgpt.site/*"
+      ],
+      "js": [
+        "bridge.js"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "optional_host_permissions": [
+    "https://www.nytimes.com/*",
+    "https://rss.nytimes.com/*",
+    "https://wordloom-reading.nicktang0307.chatgpt.site/*"
+  ]
+}
