@@ -114,9 +114,3 @@ Automated checks cover extraction fixtures, scheduling and Python API behaviour.
 - The daily importer runs on the laptop, not on a cloud schedule or directly on iPhone.
 - This is a mobile-friendly website, not an App Store app.
 - Original practice content remains in legacy source fixtures, but the active reading shelf uses imported NYT articles.
-
-## Portfolio context
-
-Built by Nicholas Tang as an AI-assisted personal learning project. The project combines browser automation, contextual vocabulary capture, Cantonese explanations, persistent review scheduling and responsive UI development. The code and documentation distinguish the deployed implementation from experimental and optional components.
-
-The source snapshot excludes environment secrets, browser sessions, local databases, imported articles, build output and the private development Git history. Third-party notices are retained in `build/` and `vendor/`.
